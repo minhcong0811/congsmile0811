@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package com.lab1;
-
+import java.awt.Dimension;
+import java.awt.Graphics;
+import javax.swing.ImageIcon;
 /**
  *
  * @author neroooo

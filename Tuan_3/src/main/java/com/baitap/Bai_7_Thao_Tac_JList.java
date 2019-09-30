@@ -8,6 +8,7 @@ package com.baitap;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
+import javax.swing.ListSelectionModel;
 
 /**
  *
@@ -47,8 +48,8 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
         btnNhap = new javax.swing.JButton();
         txtNhap = new javax.swing.JTextField();
         checkSoAm = new javax.swing.JCheckBox();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        listMain = new javax.swing.JList<>();
+        listMain = new javax.swing.JScrollPane();
+        listSo = new javax.swing.JList<>();
         pnlBottom = new javax.swing.JPanel();
         btnDong = new javax.swing.JButton();
 
@@ -66,21 +67,45 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
         pnlTacVu.setLayout(new javax.swing.BoxLayout(pnlTacVu, javax.swing.BoxLayout.Y_AXIS));
 
         btnToSoChan.setText("Tô đen số chẵn");
-        btnToSoChan.setActionCommand("Tô đen số chẵn");
+        btnToSoChan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToSoChanActionPerformed(evt);
+            }
+        });
         pnlTacVu.add(btnToSoChan);
 
-        btnToSoLe.setText("Tô đen số lẽ");
+        btnToSoLe.setText("Tô đen số lẻ");
+        btnToSoLe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToSoLeActionPerformed(evt);
+            }
+        });
         pnlTacVu.add(btnToSoLe);
 
         btnToSoNguyenTo.setText("Tô đen số nguyên tố");
+        btnToSoNguyenTo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnToSoNguyenToActionPerformed(evt);
+            }
+        });
         pnlTacVu.add(btnToSoNguyenTo);
 
         btnBoTo.setText("Bỏ tô đen");
+        btnBoTo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBoToActionPerformed(evt);
+            }
+        });
         pnlTacVu.add(btnBoTo);
 
         btnXoaToDen.setMnemonic('X');
         btnXoaToDen.setText("Xóa các giá trị đang tô đen");
         btnXoaToDen.setActionCommand("Xóa các giá trị tô đen");
+        btnXoaToDen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnXoaToDenActionPerformed(evt);
+            }
+        });
         pnlTacVu.add(btnXoaToDen);
 
         btnTong.setText("Tổng giá trị tronmg JList");
@@ -97,20 +122,20 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
 
         checkSoAm.setText("Cho nhập số âm");
 
-        jScrollPane2.setViewportView(listMain);
+        listMain.setViewportView(listSo);
 
         javax.swing.GroupLayout pnlThongTinLayout = new javax.swing.GroupLayout(pnlThongTin);
         pnlThongTin.setLayout(pnlThongTinLayout);
         pnlThongTinLayout.setHorizontalGroup(
             pnlThongTinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlThongTinLayout.createSequentialGroup()
+            .addGroup(pnlThongTinLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(pnlThongTinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
+                .addGroup(pnlThongTinLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(listMain)
                     .addGroup(pnlThongTinLayout.createSequentialGroup()
                         .addComponent(btnNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNhap)
+                        .addComponent(txtNhap, javax.swing.GroupLayout.DEFAULT_SIZE, 134, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(checkSoAm)))
                 .addContainerGap())
@@ -123,9 +148,8 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
                     .addComponent(btnNhap)
                     .addComponent(txtNhap, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(checkSoAm))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(listMain, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnlCenterLayout = new javax.swing.GroupLayout(pnlCenter);
@@ -181,10 +205,10 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnDongActionPerformed
 
+    DefaultListModel lm = new DefaultListModel();
     private void btnNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhapActionPerformed
         // TODO add your handling code here:
         String nhap = txtNhap.getText();
-        int in = 0;
         int check = 0;
         try{
             check = Integer.parseInt(nhap);
@@ -193,14 +217,77 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Nhập sai định dạng");
             txtNhap.selectAll();
             txtNhap.requestFocus();
-            in = Integer.parseInt(nhap);
         }
-        if(!checkSoAm.isSelected() && in < 0){
+        if(!checkSoAm.isSelected() && Integer.parseInt(nhap) < 0){
             JOptionPane.showMessageDialog(null, "Không được nhập số âm");
         }
         else{
+            lm.addElement(nhap);
+            listSo.setModel(lm);
+            txtNhap.setText("");
+            txtNhap.requestFocus();
         }
     }//GEN-LAST:event_btnNhapActionPerformed
+
+    private void btnToSoLeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToSoLeActionPerformed
+        // TODO add your handling code here
+        
+        listSo.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        int[] selected = new int[listSo.getModel().getSize()];
+        for(int i=0;i<listSo.getModel().getSize();i++){
+            int soLe = Integer.parseInt(listSo.getModel().getElementAt(i).toString());
+            if(soLe %2 == 1){
+                selected[i]=i;
+            }
+        }
+        listSo.setSelectedIndices(selected);
+    }//GEN-LAST:event_btnToSoLeActionPerformed
+
+    private void btnToSoChanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToSoChanActionPerformed
+        // TODO add your handling code here:
+        listSo.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        int[] selected = new int[listSo.getModel().getSize()];
+        for(int i=0;i<listSo.getModel().getSize();i++){
+            int soChan = Integer.parseInt(listSo.getModel().getElementAt(i).toString());
+            if(soChan %2 == 0){
+                selected[i]=i;
+            }
+        }
+        listSo.setSelectedIndices(selected);
+    }//GEN-LAST:event_btnToSoChanActionPerformed
+
+    private void btnToSoNguyenToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnToSoNguyenToActionPerformed
+        // TODO add your handling code here:
+        listSo.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        int[] selected = new int[listSo.getModel().getSize()];
+        for(int i=-1;i<listSo.getModel().getSize();i++){
+            int soNguyenTo = Integer.parseInt(listSo.getModel().getElementAt(i).toString());
+            if(isPrimeNumber(soNguyenTo)){
+                selected[i]=i;
+            }
+        }
+        listSo.setSelectedIndices(selected);
+    }//GEN-LAST:event_btnToSoNguyenToActionPerformed
+
+    private void btnBoToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBoToActionPerformed
+        // TODO add your handling code here:
+        listSo.setSelectedIndices(null);
+    }//GEN-LAST:event_btnBoToActionPerformed
+
+    private void btnXoaToDenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaToDenActionPerformed
+        // TODO add your handling code here:
+        if(listSo.isSelectionEmpty()==false){
+            for(int i=0;i<listSo.getModel().getSize()+5;i++){
+                int chon = listSo.getSelectedIndex();
+                if(chon >= 0){
+                    
+                }
+            }
+        }
+        else {
+            JOptionPane.showMessageDialog(null,"Chua chon muc de xoa");
+        }
+    }//GEN-LAST:event_btnXoaToDenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -236,6 +323,20 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
             }
         });
     }
+       public static boolean isPrimeNumber(int n) {
+        // so nguyen n < 2 khong phai la so nguyen to
+        if (n < 2) {
+            return false;
+        }
+        // check so nguyen to khi n >= 2
+        int squareRoot = (int) Math.sqrt(n);
+        for (int i = 2; i <= squareRoot; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBoTo;
@@ -249,8 +350,8 @@ public class Bai_7_Thao_Tac_JList extends javax.swing.JFrame {
     private javax.swing.JCheckBox checkSoAm;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JList<Integer> listMain;
+    private javax.swing.JScrollPane listMain;
+    private javax.swing.JList<String> listSo;
     private javax.swing.JPanel pnlBottom;
     private javax.swing.JPanel pnlCenter;
     private javax.swing.JPanel pnlMain;

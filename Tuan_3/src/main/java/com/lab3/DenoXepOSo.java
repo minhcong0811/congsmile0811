@@ -5,6 +5,7 @@
  */
 package com.lab3;
 
+import javax.swing.*;
 /**
  *
  * @author neroooo
@@ -61,7 +62,7 @@ public class DenoXepOSo extends javax.swing.JFrame {
         pnlBottom.setLayout(new java.awt.GridLayout(4, 4, 3, 3));
 
         btn1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn1.setText("15");
+        btn1.setText("1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
@@ -70,62 +71,137 @@ public class DenoXepOSo extends javax.swing.JFrame {
         pnlBottom.add(btn1);
 
         btn2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn2.setText("14");
+        btn2.setText("2");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn2);
 
         btn3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn3.setText("13");
+        btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn3);
 
         btn4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn4.setText("12");
+        btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn4);
 
         btn5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn5.setText("11");
+        btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn5);
 
         btn6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn6.setText("10");
+        btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn6);
 
         btn7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn7.setText("9");
+        btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn7);
 
         btn8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn8);
 
         btn9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn9.setText("7");
+        btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn9);
 
         btn10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn10.setText("6");
+        btn10.setText("10");
+        btn10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn10ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn10);
 
         btn11.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn11.setText("5");
+        btn11.setText("11");
+        btn11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn11ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn11);
 
         btn12.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn12.setText("4");
+        btn12.setText("12");
+        btn12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn12ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn12);
 
         btn13.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn13.setText("3");
+        btn13.setText("13");
+        btn13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn13ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn13);
 
         btn14.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn14.setText("2");
+        btn14.setText("14");
+        btn14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn14ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn14);
 
         btn15.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        btn15.setText("1");
+        btn15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn15ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn15);
 
         btn16.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        btn16.setText("15");
+        btn16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn16ActionPerformed(evt);
+            }
+        });
         pnlBottom.add(btn16);
 
         pnlMain.add(pnlBottom, java.awt.BorderLayout.CENTER);
@@ -142,11 +218,104 @@ public class DenoXepOSo extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
+        check(btn1, btn2, btn3, btn5, btnRong);
+        woc();
     }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+        check(btn2, btn1, btn3, btn6, btnRong);
+        woc();
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+        check(btn3, btn2, btn4, btn7, btnRong);
+        woc();
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+        check(btn4, btn3, btn8, btnRong, btnRong);
+        woc();
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        // TODO add your handling code here:
+        check(btn5, btn1, btn9, btn6, btnRong);
+        woc();
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        // TODO add your handling code here:
+        check(btn6, btn2, btn5, btn7, btn10);
+        woc();
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        // TODO add your handling code here:
+        check(btn7, btn3, btn6, btn8, btn11);
+        woc();
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        // TODO add your handling code here:
+        check(btn8, btn4, btn7, btn12, btnRong);
+        woc();
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        // TODO add your handling code here:
+        check(btn9, btn5, btn10, btn13, btnRong);
+        woc();
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn10ActionPerformed
+        // TODO add your handling code here:
+        check(btn10, btn6, btn9, btn11, btn14);
+        woc();
+    }//GEN-LAST:event_btn10ActionPerformed
+
+    private void btn11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn11ActionPerformed
+        // TODO add your handling code here:
+        check(btn11, btn7, btn10, btn12, btn15);
+        woc();
+    }//GEN-LAST:event_btn11ActionPerformed
+
+    private void btn12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn12ActionPerformed
+        // TODO add your handling code here:
+        check(btn12, btn8, btn11, btn16, btnRong);
+        woc();
+    }//GEN-LAST:event_btn12ActionPerformed
+
+    private void btn15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn15ActionPerformed
+        // TODO add your handling code here:
+        check(btn15, btn11, btn14, btn16, btnRong);
+        woc();
+    }//GEN-LAST:event_btn15ActionPerformed
+
+    private void btn13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn13ActionPerformed
+        // TODO add your handling code here:
+        check(btn13, btn9, btn14, btnRong, btnRong);
+        woc();
+    }//GEN-LAST:event_btn13ActionPerformed
+
+    private void btn14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn14ActionPerformed
+        // TODO add your handling code here:
+        check(btn14, btn10, btn13, btn15, btnRong);
+        woc();
+    }//GEN-LAST:event_btn14ActionPerformed
+
+    private void btn16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn16ActionPerformed
+        // TODO add your handling code here:
+        check(btn16, btn15, btn12, btnRong, btnRong);
+        woc();
+    }//GEN-LAST:event_btn16ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,15 +343,41 @@ public class DenoXepOSo extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(DenoXepOSo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DenoXepOSo().setVisible(true);
+             new DenoXepOSo().setVisible(true);
             }
         });
     }
-
+    
+    public void check (JButton btnSo1, JButton btnSo2, JButton btnSo3, JButton btnSo4, JButton btnSo5) {
+        if(btnSo2.getText().length() == 0) {
+            btnSo2.setText(btnSo1.getText());
+            btnSo1.setText("");
+        } else if (btnSo3.getText().length() == 0) {
+            btnSo3.setText(btnSo1.getText());
+            btnSo1.setText("");
+        } else if (btnSo4.getText().length() == 0) {
+            btnSo4.setText(btnSo1.getText());
+            btnSo1.setText("");
+        } else if (btnSo5.getText().length() == 0) {
+            btnSo5.setText(btnSo1.getText());
+            btnSo1.setText("");
+        }
+    }
+    public void woc(){
+    if(btn1.getText().equals("1")&&btn2.getText().equals("2")&&btn3.getText().equals("3")&&
+            btn4.getText().equals("4")&&btn5.getText().equals("5")&&btn6.getText().equals("6")&&
+            btn7.getText().equals("7")&&btn8.getText().equals("8")&&btn9.getText().equals("9")&&
+            btn10.getText().equals("10")&&btn11.getText().equals("11")&&btn12.getText().equals("12")&&
+            btn13.getText().equals("13")&&btn14.getText().equals("14")&&btn15.getText().equals("15")&&
+            btn16.getText().equals("")){
+        JOptionPane.showMessageDialog(null, "Ok ban thang");
+    }
+    }
+    JButton btnRong = new JButton("hihi");
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1;
     private javax.swing.JButton btn10;

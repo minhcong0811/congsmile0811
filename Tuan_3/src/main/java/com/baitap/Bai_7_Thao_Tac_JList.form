@@ -106,23 +106,34 @@
                 <Component class="javax.swing.JButton" name="btnToSoChan">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="T&#xf4; &#x111;en s&#x1ed1; ch&#x1eb5;n"/>
-                    <Property name="actionCommand" type="java.lang.String" value="T&#xf4; &#x111;en s&#x1ed1; ch&#x1eb5;n"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnToSoChanActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnToSoLe">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="T&#xf4; &#x111;en s&#x1ed1; l&#x1ebd;"/>
+                    <Property name="text" type="java.lang.String" value="T&#xf4; &#x111;en s&#x1ed1; l&#x1ebb;"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnToSoLeActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnToSoNguyenTo">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="T&#xf4; &#x111;en s&#x1ed1; nguy&#xea;n t&#x1ed1;"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnToSoNguyenToActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnBoTo">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="B&#x1ecf; t&#xf4; &#x111;en"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBoToActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnXoaToDen">
                   <Properties>
@@ -130,6 +141,9 @@
                     <Property name="text" type="java.lang.String" value="X&#xf3;a c&#xe1;c gi&#xe1; tr&#x1ecb; &#x111;ang t&#xf4; &#x111;en"/>
                     <Property name="actionCommand" type="java.lang.String" value="X&#xf3;a c&#xe1;c gi&#xe1; tr&#x1ecb; t&#xf4; &#x111;en"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnXoaToDenActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnTong">
                   <Properties>
@@ -150,14 +164,14 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jScrollPane2" pref="318" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="listMain" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="btnNhap" min="-2" pref="73" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="txtNhap" max="32767" attributes="0"/>
+                                  <Component id="txtNhap" pref="134" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="checkSoAm" min="-2" max="-2" attributes="0"/>
                               </Group>
@@ -175,9 +189,8 @@
                               <Component id="txtNhap" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="checkSoAm" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" pref="200" max="32767" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="listMain" pref="218" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -198,21 +211,21 @@
                     <Property name="text" type="java.lang.String" value="Cho nh&#x1ead;p s&#x1ed1; &#xe2;m"/>
                   </Properties>
                 </Component>
-                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                <Container class="javax.swing.JScrollPane" name="listMain">
                   <AuxValues>
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                   </AuxValues>
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                   <SubComponents>
-                    <Component class="javax.swing.JList" name="listMain">
+                    <Component class="javax.swing.JList" name="listSo">
                       <Properties>
                         <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                           <StringArray count="0"/>
                         </Property>
                       </Properties>
                       <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Integer&gt;"/>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                       </AuxValues>
                     </Component>
                   </SubComponents>
