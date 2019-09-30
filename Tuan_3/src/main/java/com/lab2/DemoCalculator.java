@@ -61,7 +61,6 @@ public class DemoCalculator extends javax.swing.JFrame {
         txtKq.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         txtKq.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         txtKq.setText("0");
-        txtKq.setActionCommand("<Not Set>");
         txtKq.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         javax.swing.GroupLayout pnlTopLayout = new javax.swing.GroupLayout(pnlTop);
@@ -265,9 +264,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn1.getText());
-            this.txtKq.setText(String.valueOf(so));     
+            this.txtKq.setText(String.valueOf(so));
         }
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -276,9 +275,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn2.getText());
-            this.txtKq.setText(String.valueOf(so));     
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn2ActionPerformed
     }
     private void btnSo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSo3ActionPerformed
@@ -286,9 +285,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btnSo3.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btnSo3ActionPerformed
     }
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
@@ -296,9 +295,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn4.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn4ActionPerformed
     }
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
@@ -306,9 +305,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn5.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn5ActionPerformed
     }
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
@@ -316,9 +315,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn6.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn6ActionPerformed
     }
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
@@ -326,9 +325,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn7.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn7ActionPerformed
     }
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
@@ -336,9 +335,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn8.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn8ActionPerformed
     }
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
@@ -346,9 +345,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn9.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn9ActionPerformed
     }
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
@@ -356,9 +355,9 @@ public class DemoCalculator extends javax.swing.JFrame {
         String gt = this.txtKq.getText();
         if(gt.length()<12){
             if(gt.equals("0"))
-                gt ="";
+            gt ="";
             long so = Long.parseLong(gt+btn0.getText());
-            this.txtKq.setText(String.valueOf(so)); 
+            this.txtKq.setText(String.valueOf(so));
     }//GEN-LAST:event_btn0ActionPerformed
     }
     private long a = 0;
@@ -374,7 +373,7 @@ public class DemoCalculator extends javax.swing.JFrame {
 
     private void btnNhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNhanActionPerformed
         // TODO add your handling code here:
-                this.a = Long.parseLong(this.txtKq.getText());
+        this.a = Long.parseLong(this.txtKq.getText());
         if(this.a!=0){
             this.phepToan = "*";
             this.txtKq.setText("0");
@@ -383,7 +382,7 @@ public class DemoCalculator extends javax.swing.JFrame {
 
     private void btnTruActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTruActionPerformed
         // TODO add your handling code here:
-                this.a = Long.parseLong(this.txtKq.getText());
+        this.a = Long.parseLong(this.txtKq.getText());
         if(this.a!=0){
             this.phepToan = "-";
             this.txtKq.setText("0");
@@ -392,7 +391,7 @@ public class DemoCalculator extends javax.swing.JFrame {
 
     private void btnCongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCongActionPerformed
         // TODO add your handling code here:
-                this.a = Long.parseLong(this.txtKq.getText());
+        this.a = Long.parseLong(this.txtKq.getText());
         if(this.a!=0){
             this.phepToan = "+";
             this.txtKq.setText("0");
